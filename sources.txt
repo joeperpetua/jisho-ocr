@@ -1,0 +1,4 @@
+https://kdzwinel.github.io/JS-OCR-demo/
+https://developer.chrome.com/docs/extensions/reference/
+https://jcrop.com/
+https://tesseract.projectnaptha.com/
