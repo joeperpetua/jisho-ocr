@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.99" height="63.99" viewBox="0 0 2133 2133">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+    <image id="image" width="197" height="785" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAYCAYAAADZEIyjAAAAOUlEQVQokWP8////UwYGBl4GVPAZJPGfAQtgAsliEf/MhE01A1THqMRQlsCZGFgYGBieYSQfBobPAD9QENYUfxpjAAAAAElFTkSuQmCC"/>
+    <image id="image-2" width="785" height="197" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAGCAYAAADZq14TAAAAO0lEQVQokWP8////UwYGBikGBobPDNQFvAwMDM9YoAwGJJqagJeJBoaigKFvASgOQJELCn/qRzIDw2cA9zkJDO9WRWAAAAAASUVORK5CYII="/>
+  </defs>
+  <use id="Layer_1_copy" data-name="Layer 1 copy" x="1283" y="969" xlink:href="#image-2"/>
+  <use id="Layer_1_copy_4" data-name="Layer 1 copy 4" x="968" y="1290" xlink:href="#image"/>
+  <use id="Layer_1_copy_5" data-name="Layer 1 copy 5" x="968" y="63" xlink:href="#image"/>
+  <use id="Layer_1_copy_2" data-name="Layer 1 copy 2" x="62" y="969" xlink:href="#image-2"/>
+  <image x="78" y="78" width="1978" height="1978" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA7CAYAAADFJfKzAAABY0lEQVRoge2asUpDMRSGvxYnS1FwEsXZV/BBHPQtKoiPIDg4ODqJi0vfwEkcXdycpFOpIohadK0EUggh2CU54vH/IMO5vZyT77Zp7k0uxlwDH0m7sSy/ZCy7DvSTeMOyeNeyGPCexW+Wxa1lfxXJekWyXpGsVyTrFcl6RbJekaxXJOuVfyVrzTMwS1q+TNMU6wW3I2AziSfG9YUQf4hO3JLoxX/IWoS858BFId8xsAPcAYeFzwfAboP+fJJNBTXbaaHoSZb/rHDOVas+hZuKacUrmPJaOLa3IA68NOrPtJttNNVktZBruCAOrDXqTz/cVNwCy5UThzHyUDh+EH9S8zE7KJxzD2xXHrOBr8r5hBCN6Rhf4P341DOLtZ+AS69f8iSb6F2/ZjDK4kfL4tay+dxZey79ES24eUWyXpGsVyTrFcl6RbJekaxXJOsVyTZkJUtd2iJphvU7FWHBbSuJx2aVgW8MLWEcool6owAAAABJRU5ErkJggg=="/>
+  <circle class="cls-1" cx="1066.5" cy="1066.5" r="36.47"/>
+</svg>

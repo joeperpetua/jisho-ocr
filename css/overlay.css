@@ -1,0 +1,15 @@
+.quit-selection{
+    z-index: 999995;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.finish-selection{
+    z-index: 999995;
+    position: fixed;
+    top: 25px;
+    right: 80px;
+    cursor: pointer;
+}
