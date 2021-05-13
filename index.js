@@ -40,6 +40,11 @@ window.onload = async () => {
         files: ['js/cropper.js'],
     });
 
+    await chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        files: ['js/glfx.js'],
+    });
+
 };
   
 // When the button is clicked, inject functions into current page
@@ -129,6 +134,26 @@ function loadScreenshot(){
             });
             
         };
+
+        const applyFilter = async(image, dataUrl) => {
+            // try to create a WebGL canvas (will fail if WebGL isn't supported)
+            try {
+                var canvas = fx.canvas();
+            } catch (e) {
+                alert(e);
+                return;
+            }
+
+            image.setAttribute('src', dataUrl);
+
+            // convert the image to a texture
+            var texture = canvas.texture(image);
+
+            // apply the ink filter
+            canvas.draw(texture).ink(0.25).update();
+
+            return canvas.toDataURL('image/png');
+        }
         
 
         // document.querySelector('.croppr').setAttribute('style', `top: ${window.scrollY}px`); 
@@ -149,8 +174,10 @@ function loadScreenshot(){
             modal.style.display = "block";
         
             let crop = document.querySelector("#cropped-photo");
+            let filterDataUrl = await applyFilter(crop, dataUrl);
             crop.setAttribute('src', dataUrl);
-        
+
+
             let coord = document.querySelector("#crop-data");
             coord.textContent = `x: ${value.x}, y: ${value.y}, width: ${value.width}, height: ${value.height}`;
         }); 
