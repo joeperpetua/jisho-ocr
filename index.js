@@ -134,26 +134,6 @@ function loadScreenshot(){
             });
             
         };
-
-        const applyFilter = async(image, dataUrl) => {
-            // try to create a WebGL canvas (will fail if WebGL isn't supported)
-            try {
-                var canvas = fx.canvas();
-            } catch (e) {
-                alert(e);
-                return;
-            }
-
-            image.setAttribute('src', dataUrl);
-
-            // convert the image to a texture
-            var texture = canvas.texture(image);
-
-            // apply the ink filter
-            canvas.draw(texture).ink(0.25).update();
-
-            return canvas.toDataURL('image/png');
-        }
         
 
         // document.querySelector('.croppr').setAttribute('style', `top: ${window.scrollY}px`); 
@@ -173,10 +153,9 @@ function loadScreenshot(){
             let modal = document.querySelector("#myModal");
             modal.style.display = "block";
         
+            // inject img
             let crop = document.querySelector("#cropped-photo");
-            let filterDataUrl = await applyFilter(crop, dataUrl);
             crop.setAttribute('src', dataUrl);
-
 
             let coord = document.querySelector("#crop-data");
             coord.textContent = `x: ${value.x}, y: ${value.y}, width: ${value.width}, height: ${value.height}`;
